@@ -1,0 +1,13 @@
+syntax = "proto3";
+package teamspatzenhirn;
+
+import "util.proto";
+
+message SensorUpdate {
+  Vector3D angularVelocity = 1; // Unit: rad/s
+  Vector3D acceleration = 2; // Unit: m/s²
+  FourWheelDouble steeringAngle = 3; // Unit: rad
+  FourWheelDouble wheelVelocity = 4; // Unit: m/s
+  double frontLaserDistance = 5; // Unit: m
+  bool rearLaser = 6; // True if object is close
+}

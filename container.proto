@@ -1,0 +1,28 @@
+syntax = "proto3";
+package teamspatzenhirn;
+
+import "lights.proto";
+import "sensor.proto";
+import "setpoint.proto";
+import "time.proto";
+
+// Message from NUC to IOBoard
+message NUCtoIOBoardContainer {
+  TimeStamp timeStamp = 1;
+  oneof payload {
+    SingleTrackSetpoint singleTrackSetpoint = 2;
+    FullSetpoint fullSetpoint = 3;
+    TimeSyncReply timeSyncReply = 4;
+    IndicatorState indicatorState = 5;
+    BrakeLightState brakeLightState = 6;
+  }
+}
+
+// Message from IOBoard to NUC
+message IOBoardtoNUCContainer {
+  TimeStamp timeStamp = 1;
+  oneof payload {
+    SensorUpdate sensorUpdate = 2;
+    TimeSyncRequest timeSyncRequest = 3;
+  }
+}

@@ -1,0 +1,17 @@
+syntax = "proto3";
+package teamspatzenhirn;
+
+import "util.proto";
+
+// Setpoint for 2-wheel-steering single-track model
+message SingleTrackSetpoint {
+  double steeringAngleFront = 1;
+  double steeringAngleRear = 2;
+  double velocity = 3;
+}
+
+// Setpoint for 4 separate angles and velocities
+message FullSetpoint {
+  FourWheelDouble steeringAngles = 1;
+  FourWheelDouble wheelVelocities = 2;
+}

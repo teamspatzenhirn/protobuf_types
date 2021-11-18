@@ -1,0 +1,17 @@
+syntax = "proto3";
+package teamspatzenhirn;
+
+// Generic 3-Axis measurement/value
+message Vector3D {
+  double x = 1;
+  double y = 2;
+  double z = 3;
+}
+
+// Generic value for each wheel
+message FourWheelDouble {
+  double frontLeft = 1;
+  double frontRight = 2;
+  double rearLeft = 3;
+  double rearRight = 4;
+}
