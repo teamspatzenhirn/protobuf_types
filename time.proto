@@ -7,12 +7,12 @@ message TimeStamp {
 
 // NTP-Like time synchronisation request
 message TimeSyncRequest {
-  // t0 = sending timestamp
+  TimeStamp t0 = 1;
 }
 
 // NTP-Like time synchronisation reply
 message TimeSyncReply {
   TimeStamp t0 = 1; // Sending timestamp of request, forwarded, to enable stateless client
   TimeStamp t1 = 2; // Time of request reception by server
-  // t2 = sending timestamp
+  TimeStamp t2 = 3; // Time of reply by server
 }
