@@ -5,6 +5,7 @@ import "lights.proto";
 import "sensor.proto";
 import "setpoint.proto";
 import "time.proto";
+import "controlstate.proto";
 
 // Message from NUC to IOBoard
 message NUCtoIOBoardContainer {
@@ -24,5 +25,6 @@ message IOBoardtoNUCContainer {
   oneof payload {
     SensorUpdate sensorUpdate = 2;
     TimeSyncRequest timeSyncRequest = 3;
+    ControlState controlState = 4;
   }
 }
