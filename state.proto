@@ -1,6 +1,8 @@
 syntax = "proto3";
 package teamspatzenhirn;
 
-message ManualRemoteControl {
-  bool manuallyControlled = 1;
+enum ControlState {
+    TESTING = 0;
+    CUP = 1;
+    AUTONOMOUS = 2;
 }

@@ -25,6 +25,6 @@ message IOBoardtoNUCContainer {
   oneof payload {
     SensorUpdate sensorUpdate = 2;
     TimeSyncRequest timeSyncRequest = 3;
-    ManualRemoteControl manualRemoteControl = 4;
+    ControlState controlState = 4;
   }
 }
