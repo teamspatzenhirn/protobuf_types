@@ -5,7 +5,7 @@ import "lights.proto";
 import "sensor.proto";
 import "setpoint.proto";
 import "time.proto";
-import "state.proto";
+import "controlstate.proto";
 
 // Message from NUC to IOBoard
 message NUCtoIOBoardContainer {
