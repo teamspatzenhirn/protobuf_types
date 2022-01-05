@@ -1,7 +1,7 @@
 syntax = "proto3";
 package teamspatzenhirn;
 
-message HwState{
+message HwState {
   bool battery = 1;
   bool buzzer = 2;
   bool led_status = 3;
