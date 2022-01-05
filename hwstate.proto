@@ -1,0 +1,29 @@
+syntax = "proto3";
+package teamspatzenhirn;
+
+message HwState{
+  bool battery = 1;
+  bool buzzer = 2;
+  bool led_status = 3;
+  bool led_orange = 4;
+  bool led_blue = 5;
+  bool pwm = 6;
+  bool indicator_front = 7;
+  bool indicator_rear = 8;
+  bool usb = 9;
+  bool udp = 10;
+  bool network = 11;
+  bool sbus = 12;
+  bool sbus_uart = 13;
+  bool acc = 14;
+  bool gyro = 15;
+  bool steering = 16;
+  bool vesc_rx_front_left = 17;
+  bool vesc_rx_front_right = 18;
+  bool vesc_rx_rear_left = 19;
+  bool vesc_rx_rear_right = 20;
+  bool vesc_tx_front_left = 21;
+  bool vesc_tx_front_right = 22;
+  bool vesc_tx_rear_left = 23;
+  bool vesc_tx_rear_right = 24;
+}
