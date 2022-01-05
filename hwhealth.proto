@@ -1,7 +1,7 @@
 syntax = "proto3";
 package teamspatzenhirn;
 
-message HwState {
+message HwHealth {
   bool battery = 1;
   bool buzzer = 2;
   bool led_status = 3;
@@ -12,7 +12,7 @@ message HwState {
   bool indicator_rear = 8;
   bool usb = 9;
   bool udp = 10;
-  bool network = 11;
+  bool protobuf = 11;
   bool sbus = 12;
   bool sbus_uart = 13;
   bool acc = 14;

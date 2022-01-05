@@ -6,7 +6,7 @@ import "sensor.proto";
 import "setpoint.proto";
 import "time.proto";
 import "controlstate.proto";
-import "hwstate.proto";
+import "hwhealth.proto";
 
 // Message from NUC to IOBoard
 message NUCtoIOBoardContainer {
@@ -27,6 +27,6 @@ message IOBoardtoNUCContainer {
     SensorUpdate sensorUpdate = 2;
     TimeSyncRequest timeSyncRequest = 3;
     ControlState controlState = 4;
-    HwState hwState = 5;
+    HwHealth hwHealth = 5;
   }
 }
