@@ -13,7 +13,7 @@ message IndicatorState {
   }
   State state = 1;
   oneof optional_count { // If not present, indicate until other message received
-    count = 2;
+    int32 count = 2;
   }
 }
 
