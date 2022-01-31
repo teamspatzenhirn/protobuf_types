@@ -3,6 +3,10 @@ package teamspatzenhirn;
 
 import "util.proto";
 
+message IndicatorRepetitionCount {
+  int32 count = 0;
+}
+
 // Indicator state command
 message IndicatorState {
   enum State {
@@ -12,8 +16,7 @@ message IndicatorState {
     BOTH = 3;
   }
   State state = 1;
-  bool has_repetition = 2; // defaults to false; to be able to determine if 'repetitions' has been set or if the old interface was used
-  int32 repetition = 3; // number of times the indicator action should be repeated
+  IndicatorRepetitionCount count = 2; // If not present, indicate until other message received
 }
 
 // Brake light state command
