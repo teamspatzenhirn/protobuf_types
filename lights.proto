@@ -12,10 +12,12 @@ message IndicatorState {
     BOTH = 3;
   }
   State state = 1;
-  optional count = 2;
+  oneof optional_count { // If not present, indicate until other message received
+    optional count = 2;
+  }
 }
 
 // Brake light state command
-message BrakeLightState{
+message BrakeLightState {
   bool on = 1;
 }
