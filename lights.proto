@@ -3,10 +3,6 @@ package teamspatzenhirn;
 
 import "util.proto";
 
-message IndicatorRepetitionCount {
-  int32 count = 1;
-}
-
 // Indicator state command
 message IndicatorState {
   enum State {
@@ -16,7 +12,7 @@ message IndicatorState {
     BOTH = 3;
   }
   State state = 1;
-  IndicatorRepetitionCount count = 2; // If not present, indicate until other message received
+  optional count = 2;
 }
 
 // Brake light state command
