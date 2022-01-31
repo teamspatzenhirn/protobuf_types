@@ -4,7 +4,7 @@ package teamspatzenhirn;
 import "util.proto";
 
 message IndicatorRepetitionCount {
-  int32 count = 0;
+  int32 count = 1;
 }
 
 // Indicator state command
