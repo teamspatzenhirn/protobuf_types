@@ -10,4 +10,5 @@ message SensorUpdate {
   FourWheelDouble wheelVelocity = 4; // Unit: m/s
   double frontLaserDistance = 5; // Unit: m
   bool rearLaser = 6; // True if object is close
+  int64 id = 7; // packet ID
 }
