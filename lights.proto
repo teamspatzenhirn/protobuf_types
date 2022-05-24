@@ -1,8 +1,6 @@
 syntax = "proto3";
 package teamspatzenhirn;
 
-import "util.proto";
-
 message IndicatorRepetitionCount {
   int32 count = 1;
 }
