@@ -14,6 +14,7 @@ message NUCtoIOBoardContainer {
   oneof payload {
     SingleTrackSetpoint singleTrackSetpoint = 2;
     FullSetpoint fullSetpoint = 3;
+    YeetSetpoint yeetSetpoint = 7;
     TimeSyncReply timeSyncReply = 4;
     IndicatorState indicatorState = 5;
     BrakeLightState brakeLightState = 6;
