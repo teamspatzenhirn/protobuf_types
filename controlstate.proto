@@ -6,4 +6,5 @@ enum ControlState {
     CUP = 1;
     AUTONOMOUS = 2;
     HW_FAULT = 3;
+    FAILSAFE = 4;
 }
