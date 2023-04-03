@@ -18,6 +18,7 @@ message HwHealth {
   bool acc = 14;
   bool gyro = 15;
   bool steering = 16;
+  bool laser_rear = 25;
   bool vesc_rx_front_left = 17;
   bool vesc_rx_front_right = 18;
   bool vesc_rx_rear_left = 19;
