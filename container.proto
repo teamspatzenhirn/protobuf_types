@@ -29,5 +29,6 @@ message IOBoardtoNUCContainer {
     TimeSyncRequest timeSyncRequest = 3;
     ControlState controlState = 4;
     HwHealth hwHealth = 5;
+    SnapshotState snapshotState = 6;
   }
 }
